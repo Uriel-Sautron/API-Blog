@@ -44,5 +44,4 @@ gem 'devise'
 gem 'devise-jwt'
 gem "table_print"
 gem 'rack-cors'
-gem 'jsonapi-rails'
 gem 'dotenv-rails', groups: [:development, :test]

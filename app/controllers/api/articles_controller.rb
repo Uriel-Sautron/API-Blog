@@ -15,6 +15,7 @@ class Api::ArticlesController < Api::BaseController
 
   # POST /articles
   def create
+    puts article_params
     @article = Article.new(article_params)
 
     if @article.save
@@ -46,6 +47,6 @@ class Api::ArticlesController < Api::BaseController
 
     # Only allow a trusted parameter "white list" through.
     def article_params
-      params.require(:article).permit(:title, :content)
+      params.require(:article).permit(:title, :content, :user_id)
     end
 end

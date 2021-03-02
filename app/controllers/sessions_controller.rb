@@ -11,4 +11,9 @@ class SessionsController < Devise::SessionsController
     head :no_content
   end
 
+
+  def user_params
+    params.permit(:email, :password, :registration, :format)
+  end
+
 end
