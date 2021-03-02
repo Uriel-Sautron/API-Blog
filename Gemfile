@@ -39,3 +39,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+gem 'devise'
+gem 'devise-jwt'
+gem "table_print"
+gem 'rack-cors'
+gem 'jsonapi-rails'
+gem 'dotenv-rails', groups: [:development, :test]
